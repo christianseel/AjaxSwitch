@@ -1,0 +1,4 @@
+AjaxManager
+===========
+
+AjaxManager for MODX
