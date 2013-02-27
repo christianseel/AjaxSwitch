@@ -1,4 +1,4 @@
-AjaxManager
+AjaxSwitch
 ===========
 
-AjaxManager for MODX
+A MODX plugin that processes ajax and non-ajax requests
