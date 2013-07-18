@@ -27,7 +27,7 @@ switch($eventName) {
 		// ajax request
 		
 			$resourceCache = $modx->cacheManager->getCacheProvider($modx->getOption('cache_resource_key', null, 'resource'));
-			$cacheKey = $modx->resource->getCacheKey() . '/ajaxmanager/' . $modx->resource->get('id') . '.' . md5($addResourceFields) .  '.json';
+			$cacheKey = $modx->resource->getCacheKey() . '/ajaxswitch/' . $modx->resource->get('id') . '.' . md5($addResourceFields) .  '.json';
 			
 			// check if resource is cacheable
 			if ($modx->resource->get('cacheable')) {
