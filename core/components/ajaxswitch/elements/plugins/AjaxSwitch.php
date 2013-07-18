@@ -61,9 +61,11 @@ switch($eventName) {
 						$modx->parser->processElementTags('', $fields[$key], false, false, '[[', ']]', array(), $maxIterations);
 					}
 				}
-								
-				// put $fields in the modx cache
-				$resourceCache->set($cacheKey,$fields,0);
+				
+				if ($modx->resource->get('cacheable')) {				
+					// put $fields in the modx cache
+					$resourceCache->set($cacheKey,$fields,0);
+				}
 				
 				// add "uncached" value, since current output is uncached
 				$fields['cached'] = 'false';
