@@ -14,7 +14,7 @@
 **/
 
 $processJsonFields = $modx->getOption('ajaxswitch.process_json_fields', $scriptProperties, true);
-$addResourceFields = $modx->getOption('ajaxswitch.add_resource_fields', $scriptProperties, 'pagetitle,longtitle,uri');
+$addResourceFields = $modx->getOption('ajaxswitch.add_resource_fields', $scriptProperties, 'id,pagetitle,longtitle,content');
 $maxIterations= (integer) $modx->getOption('parser_max_iterations', null, 10);
 $modxResourceFields = array("id","type","contentType","pagetitle","longtitle","description","alias","link_attributes","published","pub_date","unpub_date","parent","isfolder","introtext","content","richtext","template","menuindex","searchable","cacheable","createdby","createdon","editedby","editedon","deleted","deletedon","deletedby","publishedon","publishedby","menutitle","donthit","privateweb","privatemgr","content_dispo","hidemenu","class_key","context_key","content_type","uri","uri_override","hide_children_in_tree","show_in_tree","properties");
 
